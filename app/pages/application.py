@@ -226,7 +226,7 @@ def main():
 
         # Column 2: Select image from selectbox and checkbox for camera input
         with col2:
-            example_images_path = os.path.join("examples", crop_name_lower)
+            example_images_path = os.path.join("app/examples", crop_name_lower)
             image_options = get_image_options(example_images_path)
             if len(image_options) > 0:
                 selected_image = st.selectbox(
